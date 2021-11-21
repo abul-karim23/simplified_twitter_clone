@@ -17,7 +17,7 @@
            <!-- <div class="flex-center position-ref full-height"> -->
 
            <div class="container">
-            <div class="jumbotron mt-5">
+            <div class="jumbotron mt-5 mr-4">
                 <h1 class="display-4">Twitter Clone</h1>
                 <p class="lead">This is a simplified version of twitter. Join today.</p>
                 <hr class="my-4">
