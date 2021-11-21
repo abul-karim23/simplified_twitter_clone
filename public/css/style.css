@@ -1,0 +1,33 @@
+.bg-fill{    
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.bg-fill img{
+    width: 100%;
+    height: 100%;
+}
+
+.bg-color{
+    background-color: white;
+}
+
+.fill{
+    min-height: 100%;
+    height: 100%;
+}
+
+/* .scroll-hidden{
+    overflow:hidden;
+    position: relative;
+} */
+.scroll{
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; 
+  }

@@ -1,17 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+<div class="row bg-color" >
+        <div class="col bg-fill" >
+        <img src="{{asset('images/twitter_bg.jpg')}}"  alt="Twitter logo">
+        </div>
+        <div class="col mt-5">
+
+        <span>
+               <div><img src="{{asset('images/twitter_logo.png')}}" class="" alt="Twitter logo">
+               <a href="/" class="btn btn-primary float-right mr-5">Home</a></div>
+           </span>
+                                
+
+            <form method="POST" action="{{ route('login') }}">
                         @csrf
 
-                        <div class="form-group row">
+                        <div class="form-group row mt-5 pt-2">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
@@ -51,7 +57,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
+                        <div class="form-group row ">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
@@ -64,10 +70,14 @@
                                 @endif
                             </div>
                         </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <label for="signup">Don't have an account? <a href="{{ route('register') }}">Signup</a></label>
+                            </div>
+                        </div>
                     </form>
-                </div>
-            </div>
+        
         </div>
-    </div>
-</div>
+    </div>  
 @endsection
